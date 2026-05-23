@@ -1,6 +1,12 @@
 # Password file — NEVER commit
 .htpasswd
 
+# Node (screenshot tooling only — not part of website)
+node_modules/
+package.json
+package-lock.json
+screenshot.js
+
 # OS / editor artifacts
 .DS_Store
 Thumbs.db
