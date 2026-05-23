@@ -3,12 +3,9 @@
 
 # Preview & screenshot tooling — not part of website
 preview.html
-
-# Node
-node_modules/
-package.json
-package-lock.json
 screenshot.js
+build_pptx.py
+*.pptx
 
 # OS / editor artifacts
 .DS_Store
