@@ -1,0 +1,8 @@
+# Password file — NEVER commit
+.htpasswd
+
+# OS / editor artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
