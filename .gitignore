@@ -7,6 +7,11 @@ screenshot.js
 build_pptx.py
 *.pptx
 
+# Node (screenshot / build tooling)
+node_modules/
+package.json
+package-lock.json
+
 # OS / editor artifacts
 .DS_Store
 Thumbs.db
