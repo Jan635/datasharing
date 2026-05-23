@@ -50,23 +50,37 @@ body {
 
 .nav-logo {
   text-decoration: none;
-  letter-spacing: 0.12em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-name {
   font-family: var(--font-sans);
-  font-size: 0.78rem;
-  font-weight: 500;
-  color: var(--black);
-}
-
-.logo-w {
-  font-family: var(--font-serif);
-  font-size: 1.4rem;
+  font-size: 0.82rem;
   font-weight: 600;
-  color: var(--gold);
-  margin-right: 2px;
-  line-height: 1;
+  letter-spacing: 0.18em;
+  color: var(--off-black);
+  text-transform: uppercase;
 }
 
-.logo-text { color: var(--black); }
+.logo-divider {
+  font-weight: 100;
+  font-size: 1rem;
+  color: var(--off-black);
+  opacity: 0.35;
+  line-height: 1;
+  margin: 0 2px;
+}
+
+.logo-sub {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.04em;
+  color: var(--gold);
+}
 
 .nav-links {
   list-style: none;
@@ -544,19 +558,22 @@ a.contact-value:hover { color: var(--gold); }
 }
 
 .footer-logo {
-  font-size: 0.75rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.5);
-  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.footer-logo span {
-  font-family: var(--font-serif);
-  font-style: italic;
-  color: var(--gold);
-  letter-spacing: 0.04em;
-  text-transform: none;
+.footer-logo .logo-name {
+  color: rgba(255,255,255,0.65);
+}
+
+.footer-logo .logo-divider {
+  color: rgba(255,255,255,0.25);
+  opacity: 1;
+}
+
+.footer-logo .logo-sub {
+  color: var(--gold-light);
 }
 
 .footer-legal {
