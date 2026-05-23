@@ -18,8 +18,8 @@ navLinks?.querySelectorAll('a').forEach(link => {
 const nav = document.querySelector('.nav');
 window.addEventListener('scroll', () => {
   nav.style.background = window.scrollY > 40
-    ? 'rgba(245,243,239,0.97)'
-    : 'rgba(245,243,239,0.92)';
+    ? 'rgba(244,247,250,0.98)'
+    : 'rgba(244,247,250,0.94)';
 }, { passive: true });
 
 // Intersection observer for fade-up animations

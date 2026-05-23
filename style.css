@@ -2,16 +2,16 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --black: #0a0a0a;
-  --off-black: #111111;
-  --dark: #1a1a1a;
-  --charcoal: #2c2c2c;
-  --mid: #6b6b6b;
-  --light-mid: #9a9a9a;
-  --off-white: #f5f3ef;
+  --black: #06101a;
+  --off-black: #0d1e2e;
+  --dark: #162538;
+  --charcoal: #1e3248;
+  --mid: #5a7080;
+  --light-mid: #8aa0b0;
+  --off-white: #f4f7fa;
   --white: #ffffff;
-  --gold: #b8965a;
-  --gold-light: #d4af7a;
+  --gold: #9b2335;
+  --gold-light: #b83040;
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-sans: 'Inter', system-ui, sans-serif;
   --transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -33,7 +33,7 @@ body {
   top: 0; left: 0; right: 0;
   z-index: 100;
   padding: 0 40px;
-  background: rgba(245, 243, 239, 0.92);
+  background: rgba(244, 247, 250, 0.94);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(0,0,0,0.06);
   transition: background var(--transition);
@@ -120,8 +120,8 @@ body {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 60% at 50% 40%, rgba(184,150,90,0.08) 0%, transparent 70%),
-    linear-gradient(160deg, #111 0%, #0a0a0a 50%, #151210 100%);
+    radial-gradient(ellipse 80% 60% at 50% 40%, rgba(155,35,53,0.12) 0%, transparent 70%),
+    linear-gradient(160deg, #0d1e2e 0%, #06101a 50%, #0a1520 100%);
 }
 
 .hero-bg::after {
@@ -175,7 +175,7 @@ body {
   text-transform: uppercase;
   font-weight: 500;
   color: var(--gold);
-  border: 1px solid rgba(184,150,90,0.4);
+  border: 1px solid rgba(155,35,53,0.5);
   padding: 16px 40px;
   transition: all var(--transition);
   position: relative;
@@ -224,7 +224,7 @@ body {
 .scroll-line {
   width: 1px;
   height: 48px;
-  background: linear-gradient(to bottom, rgba(184,150,90,0.6), transparent);
+  background: linear-gradient(to bottom, rgba(155,35,53,0.7), transparent);
   animation: scrollPulse 2s ease-in-out infinite;
 }
 
@@ -330,7 +330,7 @@ body {
   font-size: clamp(1.4rem, 3vw, 2.2rem);
   font-weight: 300;
   font-style: italic;
-  color: var(--black);
+  color: var(--white);
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.4;
