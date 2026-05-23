@@ -1,7 +1,10 @@
 # Password file — NEVER commit
 .htpasswd
 
-# Node (screenshot tooling only — not part of website)
+# Preview & screenshot tooling — not part of website
+preview.html
+
+# Node
 node_modules/
 package.json
 package-lock.json
