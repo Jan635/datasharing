@@ -350,6 +350,86 @@ body {
   line-height: 1.4;
 }
 
+/* ===== Team ===== */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+}
+
+.team-card {
+  background: var(--white);
+  padding: 48px 40px;
+  border-top: 3px solid var(--gold);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.team-initial {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--off-black);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  margin-bottom: 24px;
+}
+
+.team-name {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--off-black);
+  margin-bottom: 4px;
+}
+
+.team-role {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+  margin-bottom: 22px;
+}
+
+.team-bio {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--mid);
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+
+.team-tags {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.team-tags li {
+  font-size: 0.8rem;
+  color: var(--light-mid);
+  padding-left: 16px;
+  position: relative;
+}
+
+.team-tags li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
 /* ===== Services ===== */
 .services-grid {
   display: grid;
@@ -639,6 +719,9 @@ a.contact-value:hover { color: var(--gold); }
 
   .services-grid { grid-template-columns: 1fr; }
   .service-card { padding: 36px 28px; }
+
+  .team-grid { grid-template-columns: 1fr; gap: 32px; }
+  .team-card { padding: 36px 28px; }
 
   .contact-wrap {
     grid-template-columns: 1fr;

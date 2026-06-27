@@ -33,7 +33,7 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
 
 document.querySelectorAll(
-  '.service-card, .principle, .stat, .contact-left, .contact-right, .section-headline, .section-text'
+  '.service-card, .team-card, .principle, .stat, .contact-left, .contact-right, .section-headline, .section-text'
 ).forEach((el, i) => {
   el.classList.add('fade-up');
   el.style.transitionDelay = `${(i % 3) * 0.1}s`;
