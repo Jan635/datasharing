@@ -6,6 +6,9 @@ preview.html
 screenshot.js
 build_pptx.py
 *.pptx
+banner.html
+render_banner.js
+*.png
 
 # Node (screenshot / build tooling)
 node_modules/
