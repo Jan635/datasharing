@@ -6,6 +6,7 @@ preview.html
 screenshot.js
 build_pptx.py
 build_pptx_update.py
+build_pptx_consulting.py
 *.pptx
 banner.html
 render_banner.js
