@@ -8,7 +8,11 @@ build_pptx.py
 *.pptx
 banner.html
 render_banner.js
+build_docx.py
+logo_render.html
+render_logo.js
 *.png
+*.docx
 
 # Node (screenshot / build tooling)
 node_modules/
