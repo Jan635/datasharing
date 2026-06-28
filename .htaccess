@@ -1,0 +1,14 @@
+AuthType Basic
+AuthName "Wiegmann Executive Advisory — Privater Bereich"
+AuthUserFile /path/to/.htpasswd
+Require valid-user
+
+# Block search engine indexing at server level
+Header set X-Robots-Tag "noindex, nofollow, noarchive, nosnippet"
+
+# Security headers
+Header always set X-Frame-Options "DENY"
+Header always set X-Content-Type-Options "nosniff"
+Header always set Referrer-Policy "no-referrer"
+
+Options -Indexes

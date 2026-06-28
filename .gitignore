@@ -1,0 +1,33 @@
+# Password file — NEVER commit
+.htpasswd
+
+# Preview & screenshot tooling — not part of website
+preview.html
+screenshot.js
+build_pptx.py
+build_pptx_update.py
+build_pptx_consulting.py
+*.pptx
+banner.html
+render_banner.js
+build_docx.py
+build_legal.py
+logo_render.html
+render_logo.js
+*.png
+*.docx
+
+# Legal documents — published as on-site Word downloads (keep these)
+!Wiegmann_AGB.docx
+!Wiegmann_Datenschutzerklaerung.docx
+
+# Node (screenshot / build tooling)
+node_modules/
+package.json
+package-lock.json
+
+# OS / editor artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
