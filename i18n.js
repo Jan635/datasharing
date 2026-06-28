@@ -105,6 +105,9 @@ const I18N_EN = {
   'form.note': 'All enquiries are treated in strict confidence.',
 
   // Footer
+  'footer.imprint': 'Imprint',
+  'footer.privacy': 'Privacy',
+  'footer.terms': 'Terms',
   'footer.legal': '&copy; 2026 Wiegmann Executive Advisory &mdash; All rights reserved. This website is not publicly accessible and not intended for distribution.',
 };
 

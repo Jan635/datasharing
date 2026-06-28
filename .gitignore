@@ -11,10 +11,15 @@ build_pptx_consulting.py
 banner.html
 render_banner.js
 build_docx.py
+build_legal.py
 logo_render.html
 render_logo.js
 *.png
 *.docx
+
+# Legal documents — published as on-site Word downloads (keep these)
+!Wiegmann_AGB.docx
+!Wiegmann_Datenschutzerklaerung.docx
 
 # Node (screenshot / build tooling)
 node_modules/
