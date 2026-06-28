@@ -100,6 +100,40 @@ body {
 
 .nav-links a:hover { color: var(--black); }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(13, 30, 46, 0.18);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  padding: 6px 13px;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--mid);
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+}
+
+.lang-btn:hover { color: var(--off-black); }
+
+.lang-btn.active {
+  background: var(--gold);
+  color: var(--white);
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -733,6 +767,8 @@ a.contact-value:hover { color: var(--gold); }
   .nav { padding: 0 24px; }
   .nav-links { display: none; }
   .nav-toggle { display: flex; }
+  .nav-right { gap: 16px; }
+  .lang-btn { padding: 5px 11px; font-size: 0.66rem; }
 
   .nav-links.open {
     display: flex;

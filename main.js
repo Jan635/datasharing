@@ -57,14 +57,19 @@ form?.addEventListener('submit', e => {
 
   window.location.href = `mailto:j.wiegmann@hotmail.com?subject=${subject}&body=${body}`;
 
-  // Show success message after short delay
+  // Show success message after short delay (language-aware)
   setTimeout(() => {
     form.style.display = 'none';
+    const lang = window.currentLang || 'de';
+    const msg = (window.I18N_SUCCESS && window.I18N_SUCCESS[lang]) || {
+      h: 'Vielen Dank.',
+      p: 'Ihre Nachricht wurde vorbereitet. Bitte senden Sie die geöffnete E-Mail ab,<br />um Ihre Anfrage zu übermitteln.',
+    };
     const success = document.createElement('div');
     success.className = 'form-success visible';
     success.innerHTML = `
-      <h4>Vielen Dank.</h4>
-      <p>Ihre Nachricht wurde vorbereitet. Bitte senden Sie die geöffnete E-Mail ab,<br />um Ihre Anfrage zu übermitteln.</p>
+      <h4>${msg.h}</h4>
+      <p>${msg.p}</p>
     `;
     form.parentNode.appendChild(success);
   }, 800);
