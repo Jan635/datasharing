@@ -36,7 +36,7 @@ const I18N_EN = {
   // Team
   'team.label': '02 &mdash; The team',
   'team.headline': 'Two perspectives, one signature',
-  'team.intro': 'Jan and Frank Wiegmann lead each mandate together — combining search expertise with decades of operational leadership as a shared advisory foundation.',
+  'team.intro': 'Jan and Frank Wiegmann combine search expertise with decades of operational leadership — as a shared foundation for the advisory.',
   'team.fw.role': 'Restructuring &amp; Operations',
   'team.fw.bio': 'Frank Wiegmann brings decades of experience in the operational leadership of international industrial companies. As CEO of Bene AG and COO of Schuler AG, he led transformation processes, restructurings and operational excellence programmes in complex, owner-managed and listed structures. His line experience forms the operational depth of the advisory.',
   'team.fw.t1': 'Former CEO, Bene AG',
